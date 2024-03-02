@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+/*NAVBAR*/
 .navbar {
   background: #007377;
   font-family: "Manrope", sans-serif;
@@ -101,14 +102,96 @@ svg {
 
 }
 
+/*OUR MISSION*/
 .our-Mission {
   width: 100%;
   background-color: white;
   justify-content: center;
-  /* Center horizontally */
-
 }
 
+.mission-text {
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 44px;
+  text-align: center;
+  padding: 10px 340px;
+
+  @media (max-width: 768px) {
+    /* Maintain weight on mobile */
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 60px;
+  }
+}
+
+.mission-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: center;
+  padding: 10px 340px;
+
+  @media (max-width: 768px) {
+    /* Maintain weight on mobile */
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 10px 60px;
+  }
+}
+
+/*VIDEO BANNER*/
+.video-container {
+  position: relative;
+  /* Allows absolute positioning for the banner */
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100lvw;
+  /* Fills the container width */
+  height: 736px;
+  object-fit: cover;
+  /* Covers the container while maintaining aspect ratio */
+
+  @media (max-width: 1024px) {
+    /* Adjust breakpoint as needed */
+    height: 519px;
+    /* Ensures video fills the container vertically */
+  }
+}
+
+#banner {
+  position: absolute;
+  /* Positions the banner on top of the video */
+  top: 50%;
+  /* Vertically centers the banner */
+  left: 50%;
+  /* Horizontally centers the banner */
+  transform: translate(-50%, -50%);
+  /* More efficient way to center */
+  text-align: center;
+  /* Centers the text inside the banner */
+  color: white;
+  /* Adjusts text color */
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  padding: 120px;
+
+  @media (max-width: 1024px) {
+    /* Maintain weight on mobile */
+    font-size: 32px;
+    line-height: 48px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+/*SECTION*/
 .rounded-picture-left {
   justify-content: center;
   border-top-left-radius: 300px;
@@ -148,39 +231,6 @@ svg {
   color: black;
   width: 100%;
 }
-
-.mission-text {
-  font-size: 24px;
-  font-weight: 400px;
-  line-height: 44px;
-  text-align: center;
-  padding: 10px 340px;
-
-  @media (max-width: 768px) {
-    /* Maintain weight on mobile */
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 30px;
-    padding: 10px 60px;
-  }
-}
-
-.mission-heading {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 72px;
-  text-align: center;
-  padding: 10px 340px;
-
-  @media (max-width: 768px) {
-    /* Maintain weight on mobile */
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    padding: 10px 60px;
-  }
-}
-
 
 .section-text-left {
   font-size: 24px;
@@ -274,6 +324,7 @@ h2 {
   text-decoration-color: #007377;
 }
 
+/*LIFELINE*/
 .green-div h2 {
   text-decoration-color: #f6dba0;
 }
@@ -299,7 +350,7 @@ h2 {
   }
 }
 
-
+/*FOOTER*/
 ul li {
   list-style-type: none;
   font-family: "Manrope", sans-serif;
