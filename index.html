@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Prelim Project</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/video.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+      <!-- order here -->
+      <a class="navbar-brand px-5\ order-lg-0 order-1" href="#"><img src="images\logo.png" alt="" /></a>
+      <button class="navbar-toggler mr-auto order 0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse order-6" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="centerli">
+
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Lifeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Nutrition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Free by Referral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Public Relations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Management</a>
+          </li>
+        </ul>
+      </div>
+      <div class="shoppingcart mr-auto order-lg-3 order-3">
+        <a href="#" class="d-flex align-items-center text-white">
+
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.4552 13.2C18.3549 13.2 19.1467 12.708 19.5546 11.964L23.8494 4.176C23.9505 3.99411 24.0024 3.78897 23.9999 3.58087C23.9974 3.37277 23.9406 3.16893 23.8352 2.98951C23.7298 2.8101 23.5793 2.66134 23.3988 2.55794C23.2182 2.45455 23.0138 2.4001 22.8057 2.4H5.05061L3.92292 0H0V2.4H2.39934L6.71815 11.508L5.0986 14.436C4.22284 16.044 5.37452 18 7.19802 18H21.5941V15.6H7.19802L8.51766 13.2H17.4552ZM6.1903 4.8H20.7663L17.4552 10.8H9.03351L6.1903 4.8ZM7.19802 19.2C5.87838 19.2 4.81068 20.28 4.81068 21.6C4.81068 22.92 5.87838 24 7.19802 24C8.51766 24 9.59736 22.92 9.59736 21.6C9.59736 20.28 8.51766 19.2 7.19802 19.2ZM19.1947 19.2C17.8751 19.2 16.8074 20.28 16.8074 21.6C16.8074 22.92 17.8751 24 19.1947 24C20.5144 24 21.5941 22.92 21.5941 21.6C21.5941 20.28 20.5144 19.2 19.1947 19.2Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="MyOffice d-none d-sm-block order-lg-4 order-5">
+        <!-- Inline SVG icon -->
+
+        <a href="#" class="d-flex align-items-center text-white">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 5.14286C11.1524 5.14286 10.3238 5.39421 9.61899 5.86513C8.91421 6.33605 8.36489 7.00539 8.04052 7.7885C7.71614 8.57161 7.63127 9.43332 7.79664 10.2647C7.962 11.096 8.37018 11.8597 8.96955 12.459C9.56891 13.0584 10.3326 13.4666 11.1639 13.6319C11.9952 13.7973 12.857 13.7124 13.6401 13.3881C14.4232 13.0637 15.0925 12.5144 15.5634 11.8096C16.0344 11.1048 16.2857 10.2762 16.2857 9.42857C16.2857 8.29193 15.8342 7.20184 15.0305 6.39811C14.2267 5.59439 13.1366 5.14286 12 5.14286Z"
+              fill="#F6DBA0" />
+            <path
+              d="M12 0C9.62663 0 7.30655 0.703788 5.33316 2.02236C3.35977 3.34094 1.8217 5.21508 0.913451 7.4078C0.0051994 9.60051 -0.232441 12.0133 0.230582 14.3411C0.693605 16.6689 1.83649 18.807 3.51472 20.4853C5.19295 22.1635 7.33115 23.3064 9.65892 23.7694C11.9867 24.2324 14.3995 23.9948 16.5922 23.0865C18.7849 22.1783 20.6591 20.6402 21.9776 18.6668C23.2962 16.6934 24 14.3734 24 12C23.9964 8.81851 22.7309 5.76838 20.4813 3.51873C18.2316 1.26908 15.1815 0.00362976 12 0ZM18.8503 19.6509C18.8332 18.5266 18.3751 17.454 17.5748 16.6642C16.7744 15.8744 15.6958 15.4307 14.5714 15.4286H9.42858C8.30416 15.4307 7.22558 15.8744 6.42522 16.6642C5.62487 17.454 5.1668 18.5266 5.14972 19.6509C3.59535 18.2629 2.4992 16.4356 2.00643 14.4109C1.51367 12.3861 1.64752 10.2594 2.39027 8.31245C3.13301 6.36546 4.44962 4.69 6.16575 3.50791C7.88188 2.32583 9.91658 1.69288 12.0004 1.69288C14.0843 1.69288 16.119 2.32583 17.8351 3.50791C19.5512 4.69 20.8678 6.36546 21.6106 8.31245C22.3533 10.2594 22.4872 12.3861 21.9944 14.4109C21.5017 16.4356 20.4047 18.2629 18.8503 19.6509Z"
+              fill="#F6DBA0" />
+          </svg>
+
+          My Office</a>
+      </div>
+      <div class="dropdown order-lg-5 order-3">
+
+        <a href="#" class="d-flex align-items-center text-white dropdown-toggle" data-bs-toggle="dropdown">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_535_106)">
+              <path
+                d="M12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1M12 23C5.925 23 1 18.075 1 12C1 5.925 5.925 1 12 1M12 23C15 23 16 18 16 12C16 6 15 1 12 1M12 23C9 23 8 18 8 12C8 6 9 1 12 1M2 16H22M2 8H22"
+                stroke="#F6DBA0" stroke-width="2" />
+            </g>
+            <defs>
+              <clipPath id="clip0_535_106">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          English
+        </a>
+        <ul class="dropdown-menu ">
+          <li><a href="#" class="dropdown-item">Spanish</a></li>
+          <li><a href="#" class="dropdown-item">French</a></li>
+          <li><a href="#" class="dropdown-item">Chinese</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--MEMBER-BLOCK-->
+  <div class="member-block">
+    <ul class="nav flex-fill">
+      <li class="nav-item">
+        <img src="images\Ellipse.png" alt="" />
+      </li>
+      <li class="nav-item text-wrapper">
+        <a class="nav-link" href="#"><strong class="text-black">Amanda Jones</strong></a>
+      </li>
+    </ul>
+
+    <ul class="nav flex-fill justify-content-end">
+      <li class="nav-item text-wrapper">
+        <img src="images\call.png" alt="" />
+      </li>
+      <li class="nav-item text-wrapper">
+        <img src="images\message.png" alt="" />
+      </li>
+    </ul>
+  </div>
+
+
+  <!--VIDEO BANNER-->
+  <div class="video-container">
+    <video id="myVideo" autoplay muted loop playsinline>
+      <source src="images/sky.mp4" type="video/mp4" />
+    </video>
+    <div class="banner text-center" id="banner">
+      <h1>Troolife is dedicated to enhancing the quality and longevity of lives.</h1>
+      <img src="images/findOut.png" alt="" />
+    </div>
+  </div>
+
+
+  <!--OUR MISSION-->
+  <div class="our-Mission py-5">
+    <h2 class="mission-heading">Our Mission</h2>
+    <p class="mission-text">
+      Our TrooLife mission is to empower Members to make a true difference
+      in their own personal health, wellness and longevity. For them to
+      enhance their own quality of life, and then to inspire a better
+      quality of life for their family, friends and associates.
+    </p>
+  </div>
+  </div>
+
+  <!--SECTION-->
+
+  <div class="section">
+
+    <div class="container-responsive green-div">
+      <div class="row py-2 d-flex flex-column-reverse flex-md-row">
+        <div class="col-md-7 p-5 align-self-center pl-4">
+          <h2 class="left"> <strong>The things you consistently do</strong> </h2>
+          <p class="section-text-left">
+            to enhance your mind, your body, your relationships and your finances – will enhance your quality of life -
+            and the quality of your extended life.
+          </p>
+          <p class="section-text-left">Also be aware that the things that you do not bother to do for your
+            mind, body, relationships and finances – will reduce your quality of life.
+
+          </p>
+        </div>
+        <div class="col-md-5 text-left order-1 align-self-center py-2 pl-4">
+          <img
+            src="images/stock-photo-relationship-asian-generation-woman-diverse-friendship-and-lgbt-healthy-in-group-class-exercise-2024040476 2.png"
+            alt="Placeholder Image" class="img-fluid rounded-picture-left" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-reponsive white-div">
+      <div class="row p-2">
+        <div class="col-md-5 text-left p-1 m-0  align-self-center">
+          <img
+            src="images/stock-photo-happy-couple-riding-bicycles-outside-healthy-lifestyle-fun-concept-72007540 1.png"
+            alt="Placeholder Image" class="img-fluid rounded-picture-right" />
+        </div>
+
+        <div class="col-md-7 p-5 align-self-center">
+          <h2 class="right">Health experts say</h2>
+          <p class="section-text-right">
+            we should have five servings or fresh fruits and vegetables every
+            day, however this is not practical or possible for most active
+            adults. This is why these same experts recommend supplementing
+            your diet with high-quality vitamins, minerals, antioxidants and
+            amino acids to help provide optimal health, vitality and mental
+            clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-responsive cream-div m-0 p-0">
+      <div class="row py-2 d-flex flex-column-reverse flex-md-row">
+        <div class="col-md-7 p-5 align-self-center">
+          <h2 class="left">Through our Lifeline program,</h2>
+          <p class="section-text-left">
+            TrooLife will act as your personal wellness coach, encouraging you
+            to eat well, to maintain a healthy activity level and to help you
+            de-stress from your work and family pressures. LifeLine will also
+            advise you on how to optimize your important personal relationships
+            with your family, friends and associates, to enhance your own life,
+            and theirs.
+          </p>
+        </div>
+        <div class="col-md-5 text-left order-1 align-self-center">
+          <img src="images/stock_photo_3.png" alt="Placeholder Image" class="img-fluid rounded-picture-left" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-reponsive white-div">
+      <div class="row p-2">
+        <div class="col-md-5 text-left p-1 m-0 mt-md-5 pt-md-5 align-self-center">
+          <img src="images/pic-4.png" alt="Placeholder Image" class="img-fluid rounded-picture-right" />
+        </div>
+
+        <div class="col-md-7 p-5 align-self-center">
+          <h2 class="right">TrooLife is also committed</h2>
+          <p class="section-text-right ">
+            to providing you excellent product quality and value, with the
+            means to receive your nutritional supplements and wellness
+            coaching for free, from a few simple referrals. Please take a few
+            minutes to find out how.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center p-5 mb-5"> <img src="images/getStarted.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!--LIFELINE-->
+  <div class="green-div p-5">
+    <h1 class="text-center mb-5">Realize Your True Life Potential</h1>
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-3">
+        <div class="card-content text-center"> <img class="img-fluid my-3" src="images/coaching.png"
+            alt="Coaching Image" />
+          <h5 class="card-title lh-sm pb-3">LifeLine Wellness Coaching</h5>
+          <img src="images/learnMore.png" class="img-fluid" id="lifeline" alt="" />
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-content text-center">
+          <img class="img-fluid my-3" src="images/19-Healthcare.png" alt="Nutritional Health" />
+          <h5 class="card-title pb-5">Nutritional Health</h5>
+          <img src="images/learnMore.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-content text-center">
+          <img class="img-fluid my-3" src="images/benefits.png" alt="Referral Benefits" />
+          <h5 class="card-title pb-5">Referral Benefits</h5>
+          <img src="images/learnMore.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="container justify-content-center px-4 py-5">
+    <div class="row">
+      <div class="col-sm p-5">
+        <img src="images/Group.png" class="img-fluid" alt="Coaching Image" />
+      </div>
+      <div class="col-sm m-2">
+        <div class="row align-items-start">
+          <div class="col mb-4">
+            <ul class="list-group">
+              <li>Mission</li>
+              <li>LifeLine</li>
+              <li>Nutrition</li>
+              <li>Free by Referral</li>
+            </ul>
+          </div>
+          <div class="col-sm mb-4">
+            <ul class="list-group">
+              <li>Public Relations</li>
+              <li>Company</li>
+              <li>Management</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-sm mb-4">
+            <ul class="list-group">
+              <li>Let's Connect</li>
+              <li><img src="images/weibo.png" class="img-fluid" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center">
+            <p class="text-center footer-link">Privacy Policy</p>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-center">
+            <p class="text-center footer-link">Terms of Service</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex justify-content-center order-md-1">
+        <h6 style=" color: #007377;">© 2024 TrooLife, LLC Irvine, California, USA</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
