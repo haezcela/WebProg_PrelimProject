@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
-
 body {
   width: 100vw;
   height: 100vh;
@@ -13,10 +8,7 @@ body {
 .navbar {
   background: #007377;
   font-family: "Manrope", sans-serif;
-  padding: 10px 60px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  padding: 40px 80px;
 }
 
 .navbar-nav .nav-link {
@@ -34,34 +26,41 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-
   z-index: 999;
 }
 
 .shoppingcart {
-  margin-right: 3.8em;
+  padding: 0px 5px;
+}
 
+.vertical-line {
+  border-right: 1px solid #ffffff;
+  /* Adjust color as needed */
+  height: 20px;
+  /* Adjust the height of the line as needed */
+  /*margin-right: 70px; Adjust the right margin to create space between the icons */
+  padding: 0px 5px 0px 5px;
 }
 
 .MyOffice {
-  margin-right: 1em;
+  font-size: 16px;
+  padding-left: 10px;
+}
 
+.dropdown {
+  padding: 0px 36px 0px 12px;
+  font-size: 16px;
 }
 
 /* Media queries for mobile screens (adjust the breakpoint as needed) */
 @media (max-width: 768px) {
   .nav-link {
-    margin-right: 0.5em;
-    /* Adjust margin for mobile */
-  }
-
-  .shoppingcart {
-    margin-right: 1em;
+    padding: 0px 5px;
     /* Adjust margin for mobile */
   }
 
   .MyOffice {
-    margin-right: 0.5em;
+    padding: 0px 5px;
     /* Adjust margin for mobile */
   }
 }
@@ -72,24 +71,26 @@ body {
 }
 
 svg {
-  margin-right: 0.4em;
+  padding: 0px 5px;
 }
 
 .member-block {
   background: #f6dba0;
   padding: 8px 40px;
   /* Adjust padding using viewport units */
-  font-family: "Manrope", sans-serif;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   /* Allow items to wrap on smaller screens */
 }
 
 .nav-item {
+  font-family: "Manrope", sans-serif;
   list-style: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  padding: 0px 2px;
   /* Remove default list styles */
 }
 
@@ -97,9 +98,8 @@ svg {
   display: flex;
   align-items: center;
   /* Align text vertically in the wrapper */
-  margin-right: 1.5rem;
+  padding: 0px 12px;
   /* Add spacing between elements */
-
 }
 
 /*OUR MISSION*/
@@ -121,11 +121,32 @@ svg {
     font-weight: 400px;
     font-size: 16px;
     line-height: 30px;
-    padding: 10px 60px;
+    padding: 10px 24px;
   }
 }
 
+.underline {
+  background-image: linear-gradient(#007377 0 0);
+  background-position: bottom center;
+  /*Adjust the background-position to move the line*/
+  background-size: 5% 2px;
+  /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+  padding-bottom: 4px;
+
+  /* this can also control the position */
+  @media (max-width: 768px) {
+    background-size: 20% 2px;
+  }
+}
+
+.far {
+  padding-bottom: 10px;
+  background-image: linear-gradient(#007377 0 0);
+}
+
 .mission-heading {
+  font-family: Poppins;
   font-size: 48px;
   font-weight: 600;
   line-height: 72px;
@@ -156,10 +177,9 @@ svg {
   object-fit: cover;
   /* Covers the container while maintaining aspect ratio */
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     /* Adjust breakpoint as needed */
     height: 519px;
-    /* Ensures video fills the container vertically */
   }
 }
 
@@ -182,12 +202,24 @@ svg {
   line-height: 75px;
   padding: 120px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     /* Maintain weight on mobile */
     font-size: 32px;
     line-height: 48px;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+  }
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  text-decoration-color: #f6dba0;
+
+  @media (max-width: 768px) {
+    /* Maintain weight on mobile */
+    text-underline-offset: 5px;
   }
 }
 
@@ -294,8 +326,6 @@ h2,
   }
 }
 
-
-
 .white-div h1:after {
   display: block;
   content: "";
@@ -320,7 +350,7 @@ h2 {
   font-weight: 600px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 10px;
+  text-underline-offset: 20px;
   text-decoration-color: #007377;
 }
 
