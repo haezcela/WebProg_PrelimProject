@@ -18,8 +18,8 @@
 session_start();
 
 // Sample hardcoded valid usernames and passwords
-$valid_users = array("ohwnmx", "jkjnmx");
-$valid_passwords = array("ohwohw", "jkjjkj");
+$valid_users = array("Austin", "jkjnmx");
+$valid_passwords = array("OhAustin02", "jkjjkj");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -41,9 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php require_once 'includes/header.php'; ?>
 
 <div class="container p-5">
+
     <div class="row">
         <!-- Left column for registration form -->
     <div class="col-md-6">
+    <div class="text-center p-5">
+                    <h1>Welcome to TrooLife!</h1>
+                    <p>Please enter your information to login.</p>
+                </div>
         
     <form action="login.php" method="post">
         <div class="mb-3">
@@ -54,8 +59,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-success col-12 mb-4">Login</button>
     </form>
+    <div class="mb-5">
+
+    <button onclick="window.location.href='register.php'" class="btn btn-outline-success col-12 mb-5">Register</button>
+    </div>
+    
         </div>
         <!-- Right column for picture -->
         <div class="col-md-6">

@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<hr>
   <!--FOOTER-->
   <div class="container justify-content-center px-4 py-5">
     <div class="row">
