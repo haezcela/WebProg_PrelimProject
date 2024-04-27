@@ -25,12 +25,6 @@ unset($_SESSION['user_info']);
     <link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <style>
-        .profile-pic {
-            width: 2in;
-            height: 2in;
-        }
-    </style>
 </head>
 
 <body>

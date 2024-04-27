@@ -18,20 +18,26 @@
 session_start();
 
 // Sample hardcoded valid usernames and passwords
-$valid_users = array("Austin", "jkjnmx");
-$valid_passwords = array("OhAustin02", "jkjjkj");
+$valid_users = array("Username01", "jkjnmx");
+$valid_passwords = array("Paxxword01", "jkjjkj");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Check if username and password match
-    if (in_array($username, $valid_users) && in_array($password, $valid_passwords)) {
-        $_SESSION['username'] = $username;
-        header("Location: index.php"); // Redirect to homepage after successful login
-        exit();
+    // Check if username exists
+    $index = array_search($username, $valid_users);
+    if ($index !== false) {
+        // Check if password matches
+        if ($password == $valid_passwords[$index]) {
+            $_SESSION['username'] = $username;
+            header("Location: index.php"); // Redirect to homepage after successful login
+            exit();
+        } else {
+            $error_message = "Incorrect password";
+        }
     } else {
-        echo "Invalid username or password";
+        $error_message = "Username not found";
     }
 }
 ?>
@@ -59,9 +65,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
+        <?php if (isset($error_message)): ?>
+    <div style="text-align: center; color: red;">
+        <p><?php echo $error_message; ?></p>
+    </div>
+<?php endif; ?>
+
+
         <button type="submit" class="btn btn-success col-12 mb-4">Login</button>
     </form>
     <div class="mb-5">
+
+    
 
     <button onclick="window.location.href='register.php'" class="btn btn-outline-success col-12 mb-5">Register</button>
     </div>

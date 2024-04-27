@@ -35,6 +35,7 @@
               <li>Company</li>
               <li>Management</li>
               <li>Contact Us</li>
+              <li><a href="about.php" style="text-decoration: none; color: black;">About Us</a></li>
             </ul>
           </div>
           <div class="col-sm mb-4">

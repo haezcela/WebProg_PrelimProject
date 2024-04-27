@@ -380,6 +380,23 @@ h2 {
   }
 }
 
+/* About Us Section */
+.about-section h2 {
+  text-decoration-color: #f6dba0;
+}
+
+.about-section .card-content {
+  border: 1px solid #007377;
+  padding: 50px 40px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: justify;
+  margin-bottom: 24px;
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+}
+
 /*FOOTER*/
 ul li {
   list-style-type: none;
@@ -410,4 +427,14 @@ ul li {
     font-size: 18px;
     line-height: 24.59px;
   }
+}
+
+.carousel-content img {
+  width: 2in;
+  height: 2in;
+}
+
+.profile-pic {
+  width: 2in;
+  height: 2in;
 }

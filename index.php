@@ -62,7 +62,11 @@ session_start();
     <div class="banner text-center" id="banner">
       <h1>Tr<span class="cream-underline">oo</span>life is dedicated to enhancing the quality and longevity of lives.
       </h1>
-      <img src="images/findOut.png" alt="" />
+      <!--GO TO ABOUT US PAGE-->
+      <a href="about.php">
+    <img src="images/findOut.png" alt="Find Out More" />
+</a>
+
     </div>
   </div>
 
