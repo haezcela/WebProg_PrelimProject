@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Prelim Project</title>
+  <title>Midterm Project</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"

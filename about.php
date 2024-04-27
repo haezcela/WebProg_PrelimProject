@@ -122,18 +122,13 @@ Troolife's premium supplements promote vitality. Explore our diverse range to st
 <div class="container-responsive cream-div m-0 p-0">
   <div class="row py-2 d-flex flex-column-reverse flex-md-row">
     <div class="col-md-7 p-5 align-self-center">
-      <h2 class="left">Through our Lifeline program,</h2>
+      <h2 class="left">Our History</h2>
       <p class="section-text-left">
-        TrooLife will act as your personal wellness coach, encouraging you
-        to eat well, to maintain a healthy activity level and to help you
-        de-stress from your work and family pressures. LifeLine will also
-        advise you on how to optimize your important personal relationships
-        with your family, friends and associates, to enhance your own life,
-        and theirs.
-      </p>
+      Established in 2010, TrooLife began as a wellness startup aiming to revolutionize health. With innovative solutions and a dedicated team, we've grown into a trusted name in personalized wellness. Today, we continue to empower individuals worldwide to live healthier, more fulfilling lives.
+        </p>
     </div>
     <div class="col-md-5 text-left order-1 align-self-center">
-      <img src="images/stock_photo_3.png" alt="Placeholder Image" class="img-fluid rounded-picture-left" />
+      <img src="images/team.jpg" alt="Placeholder Image" class="img-fluid rounded-picture-left" />
     </div>
   </div>
 </div>
@@ -174,6 +169,27 @@ Troolife's premium supplements promote vitality. Explore our diverse range to st
     <span class="visually-hidden">Next</span>
   </a>
 </div>
+
+<div class="container-responsive green-div">
+            <div class="row py-2 d-flex flex-column-reverse flex-md-row">
+                <div class="col-md-7 p-5 align-self-center pl-4">
+                    <h2 class="left"> <strong>The things you consistently do</strong> </h2>
+                    <p class="section-text-left">
+                        to enhance your mind, your body, your relationships and your finances – will enhance your quality
+                        of life -
+                        and the quality of your extended life.
+                    </p>
+                    <p class="section-text-left">Also be aware that the things that you do not bother to do for your
+                        mind, body, relationships and finances – will reduce your quality of life.
+
+                    </p>
+                </div>
+                <div class="col-md-5 text-left order-1 align-self-center py-2 pl-4">
+                    <img src="images/stock-photo-relationship-asian-generation-woman-diverse-friendship-and-lgbt-healthy-in-group-class-exercise-2024040476 2.png"
+                        alt="Placeholder Image" class="img-fluid rounded-picture-left" />
+                </div>
+            </div>
+        </div>
 
 
 
