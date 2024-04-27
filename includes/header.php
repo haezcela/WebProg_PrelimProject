@@ -17,7 +17,10 @@
   <nav class="navbar navbar-expand-lg navbar-dark ">
     <div class="container-fluid">
       <!-- order -->
-      <a class="navbar-brand order-lg-0 order-1 " href="#"><img class="img-fluid  px-4 py-1 py-md-3" src="images\logo.png" alt="" /></a>
+      <a class="navbar-brand order-lg-0 order-1" href="<?php echo isset($_SESSION['username']) ? 'index.php' : 'login.php'; ?>">
+    <img class="img-fluid px-4 py-1 py-md-3" src="images\logo.png" alt="" />
+</a>
+
       <button class="navbar-toggler mr-auto order 0 border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -76,7 +79,7 @@
 
           My Office</a>
       </div>
-      
+
       <div class="dropdown order-lg-5 order-3">
 
         <a href="#" class="d-flex align-items-center text-white dropdown-toggle" data-bs-toggle="dropdown">

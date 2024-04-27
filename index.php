@@ -1,8 +1,16 @@
 <?php
 session_start();
 
-// Check if user is not logged in or session is destroyed, redirect to login page
+// Redirect to login page if not logged in
 if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
+// Logout 
+if (isset($_POST['logout'])) {
+    session_unset();
+    session_destroy();
     header("Location: login.php");
     exit;
 }
@@ -31,20 +39,18 @@ if (!isset($_SESSION['username'])) {
                 <img src="images\Ellipse.png" alt="" />
             </li>
             <li class="nav-item text-wrapper">
-                <?php if(isset($_SESSION['username'])): ?>
                 <div class="dropdown">
                     <div class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         <strong><?php echo $_SESSION['username']; ?></strong>
                     </div>
                     <!--LOGOUT -->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="login.php">Logout</a></li>
-                    </ul>
+                    <form method="post" action="">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><button type="submit" name="logout" class="dropdown-item">Logout</button></li>
+                        </ul>
+                    </form>
                 </div>
-                <?php else: ?>
-                <a class="nav-link" href="#"><strong class="text-black">Guest</strong></a>
-                <?php endif; ?>
             </li>
         </ul>
 
@@ -58,7 +64,7 @@ if (!isset($_SESSION['username'])) {
         </ul>
     </div>
 
-    <!--VIDEO BANNER-->
+    <!-- VIDEO BANNER -->
     <div class="video-container">
         <video id="myVideo" autoplay muted loop playsinline>
             <source src="images/sky.mp4" type="video/mp4" />
@@ -71,10 +77,8 @@ if (!isset($_SESSION['username'])) {
             <a href="about.php">
                 <img src="images/findOut.png" alt="Find Out More" />
             </a>
-
         </div>
     </div>
-
 
     <!--OUR MISSION-->
     <div class="our-Mission py-5" id="our-Mission">
@@ -207,7 +211,6 @@ if (!isset($_SESSION['username'])) {
     </div>
 
     <?php require_once 'includes/footer.php'; ?>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
